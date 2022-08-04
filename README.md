@@ -1,3 +1,7 @@
+//GitHub Pages
+https://starkovdima.github.io/Kata_1.6/
+
+//инфа из макета
 # Webpack Static Site Starter Kit
 
 ## Требования к проекту
