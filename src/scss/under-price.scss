@@ -1,0 +1,40 @@
+.under-price__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 0 19px;
+    margin-bottom: 50px;
+    @media (min-width: $screen-md) {
+        padding: 0;
+        width: 95%;
+        margin: 0 auto 50px;
+    }
+}
+
+.under-price__text {
+    display: inline-block;
+    max-width: 426px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.200px;
+}
+
+.under-price__link {
+
+    display: inline;
+    font-size: $standartRem;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: $fontRegular;
+
+    &::after {
+        margin-left: 5px;
+        display: inline-block;
+        content: "";
+        background: url(../img/check-mark.svg);
+        height: 10px;
+        width: 6px;
+        vertical-align: middle;
+
+    }
+}

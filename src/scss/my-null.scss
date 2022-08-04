@@ -1,0 +1,50 @@
+html,
+body {
+    min-height: 100%;
+    line-height: $standartLineH;
+    font-size: $standartRem;
+    background-color: $background-corol--main;
+    font-family: $font-family;
+    color: $difTextColor;
+    box-sizing: border-box;
+}
+
+body {
+    //отступы безопасности тест
+    //padding: 0 10px;
+    background-color: #F2F2F2;
+    min-height: 100%;
+}
+
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;  
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1, h2, h3,
+h4, h5, h6,
+p {
+    margin: 0;
+}

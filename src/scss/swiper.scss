@@ -1,0 +1,95 @@
+.swiper-wrapper {
+    padding: 0 0 0 16px;
+    height: 88px;
+
+    &.swiper-types {
+        height: 175px;
+    }
+}
+
+.swiper-slide {
+    box-sizing: border-box;
+    display: inline-block;
+    background: #FFFFFF;
+    border: 2px solid #EAEAEA;
+    border-radius: 6px;
+    max-height: 72px;
+    padding: 16px;
+    width: 240px;
+    
+    &.swiper-slide--140h {
+        max-height: 160px;
+    }
+
+    &.swiper-slide--200h {
+        max-height: 200px;
+    }
+
+    &.swiper-slide--240w {
+        width: 240px;
+    }
+} 
+
+.swiper__button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    height: 36px;
+    width: 100%;
+}
+
+.swiper__button--types {
+    align-items: flex-start;
+    height: 124px;
+}
+
+.swiper-price {
+    min-height: 220px;
+}
+
+.swiper-price__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #FFFFFF;
+    height: 200px;
+    width: 100%;
+}
+
+.swiper {
+    
+    &-pagination {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 24px;
+
+        &-bullet {
+            height: 12px;
+            width: 12px;
+            background: #DDD;
+            border-radius: 50%;
+            margin: 0 6px;
+
+            &-active {
+                background: #B5B6BC; //устанавливем цвет для активных bullets
+            }
+        }
+    }
+  }
+
+  .swiper-last {
+    @media (min-width: $screen-md) {
+        display: none;
+    }
+  }
+
+  .swiper {
+
+    @media (min-width: $screen-md) {
+        display: none;
+    }
+
+  }
+

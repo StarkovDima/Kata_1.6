@@ -1,0 +1,139 @@
+.about-us {
+    font-family: 'TT Lakes';
+    font-size: 0.9rem;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+
+    @media (min-width: $screen-md) {
+
+        flex-direction:row;
+        flex: 1 1 50%;
+        justify-content: space-between;
+        align-content: center;
+        column-gap: 36px;
+
+    }
+}
+
+.about-us__container {
+    padding: 0 16px;
+    min-width: 289px;
+
+    @media (min-width: $screen-md) {
+    padding: 0 0 0 20px;
+    }
+
+    @media (min-width: $screen-xl) {
+        padding: 0 0 0 31px;
+    }
+
+}
+
+.about-us__text {
+
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+
+.about-us__overflow {
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+
+
+    @media (min-width: $screen-sm) {
+        max-width: auto;
+        height: 70px;
+        overflow: hidden;
+    }
+
+    @media (min-width: $screen-md) {
+        height: 140px;
+    }
+
+    @media (min-width: $screen-xl) {
+        height: 155px;
+    }
+
+}
+
+.about-us__overflow--full {
+    height: 250px;
+
+    @media (min-width: 450px) {
+        height: 200px;
+    }
+
+    @media (min-width: $screen-md) {
+        height: 220px;
+    }
+
+    @media (min-width: 900px) {
+        height: 176px;
+    }
+}
+
+.about-us__photo-cps {
+    display: block;
+    margin: auto;
+    width: 320px;
+    //max-width: 531px;
+    height: 176px;
+    object-fit: cover;
+    
+    @media (min-width: $screen-md) {
+        border-radius: 5px;
+        width: 360px;
+        height: 208px;
+    }
+
+    @media (min-width: $screen-xl) {
+        width: 531.35px;
+        height: 307px;
+    }
+}
+
+.about-us__button {
+    font-family: 'TT Lakes';
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 14px;
+    transition: all 1s ease;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 11px;
+        background-image: url(../img/check-down_icon.svg);
+        vertical-align: center;
+        margin: 0 13px 0 10px;
+        transition: all 0.2s ease;
+    }
+
+    @media (min-width: $screen-xxl) {
+        display: none;
+    }
+}
+
+.about-us__button--hide {
+
+    &::before {
+        transform: rotate(180deg);
+    }
+}
+
+
+
+.about-us__photo-container {
+
+    @media (min-width: $screen-md) {
+        padding-right: 25px;
+    }
+}

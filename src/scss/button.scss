@@ -1,0 +1,41 @@
+.button {
+    width: 119px;
+    height: 32px;
+    background-color: $formBtnColor;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 14px;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+        border: 1px solid $formBtnColor;
+        color: $formTextLinkColor;
+        background-color: $background-corol--main;
+        font-weight: $fontBold;
+    }
+
+    &:hover .button__text {
+        color: $formBtnColor;
+
+        &::after {
+            visibility: hidden;
+        }
+    }
+}
+
+.button__text {
+    position: relative;
+    color: #fff;
+    font-weight: $fontRegular;
+    
+
+    &::after {
+        position: absolute;
+        top: 25%;
+        right: -15px;
+        content: "";
+        background: url(../img/check-mark-white.svg);
+        height: 10px;
+        width: 8px;
+    }
+}

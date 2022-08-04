@@ -1,0 +1,37 @@
+.swiper-price__tittle {
+    display: block;
+    font-size: 14px;
+    font-weight: $fontNormal;
+    line-height: 16px;
+    color: #7E7E82;
+    opacity: 0.72;
+}
+
+.swiper-price__text {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+}
+
+.swiper-price__content {
+    height: 164px;
+}
+
+.swiper-price__button {
+    width: 119px;
+    height: 32px;
+    margin-left: auto;
+    background-color: $formBtnColor;
+    border-radius: 16px;
+    color: #fff;
+    font-weight: $fontRegular;
+}
+
+.swiper-price__columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 228px;
+}

@@ -1,0 +1,12 @@
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    width: 1120px;
+    z-index: 1;
+
+    @media (min-width: $screen-xl) {
+    margin-left: 320px;
+    }
+}

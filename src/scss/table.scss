@@ -1,0 +1,59 @@
+.table {
+    display: none;
+
+    @media (min-width: $screen-md) {
+        display: block;
+    }
+}
+
+.table__header {
+    width: 95%;
+    padding: 0 16px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    height: 65px;
+    align-items: center;
+    font-size: $standartRem;
+    line-height: 16px;
+    color: #7E7E82;
+    mix-blend-mode: normal;
+    opacity: 0.72;
+    font-weight: $fontNormal;
+}
+
+.table__container {
+    width: 95%;
+    margin: 0 auto;
+    background-color: $TableColor;
+    border-radius: 6px;
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+    margin-bottom: 30px;
+}
+
+.table__item {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    height: 65px;
+    align-items: center;
+    
+    &:not(:last-child) {
+        border-bottom: 1px solid #EAEAEA;
+    }
+}
+
+.table__button {
+    width: 119px;
+    height: 32px;
+    margin-left: auto;
+    background-color: $formBtnColor;
+    border-radius: 16px;
+    color: #fff;
+    font-weight: $fontRegular;
+}
